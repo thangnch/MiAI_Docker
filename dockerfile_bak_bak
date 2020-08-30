@@ -1,0 +1,9 @@
+FROM python:3
+
+WORKDIR /Volumes/Data/00.Source/Python/MiAI_Docker_Sample
+
+COPY . .
+
+RUN pip install --no-cache-dir -r setup.txt
+
+CMD ["python","./flaskapp.py"]

@@ -1,0 +1,7 @@
+FROM python:3
+
+WORKDIR /Volumes/Data/00.Source/Python/MiAI_Docker_Sample
+
+COPY . .
+
+CMD ["python","./main.py"]
